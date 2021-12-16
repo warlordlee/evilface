@@ -1,5 +1,6 @@
 <template>
     <div class="main pad">
+        <div style="text-align: center;padding: 15px">Lee 草率的表情包制作</div>
         <el-tabs v-model="activeName" @tab-click="handleClick">
             <el-tab-pane label="证件" name="first">
                 <certificate></certificate>
