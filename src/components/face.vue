@@ -6,10 +6,13 @@
                 <certificate></certificate>
             </el-tab-pane>
             <el-tab-pane label="熊猫头" name="second">
-
+                <panda></panda>
             </el-tab-pane>
             <el-tab-pane label="蘑菇人" name="third">
 
+            </el-tab-pane>
+            <el-tab-pane label="摸鱼" name="forth">
+                <fish></fish>
             </el-tab-pane>
         </el-tabs>
     </div>
@@ -17,18 +20,23 @@
 
 <script>
     import certificate from "@/components/certificate";
+    import fish from "@/components/fish";
+    import panda from "@/components/panda";
+
     export default {
         name: "face",
-        components:{
-            certificate
+        components: {
+            certificate,
+            fish,
+            panda
         },
-        data(){
-            return{
-                activeName:'first'
+        data() {
+            return {
+                activeName: 'first'
             }
         },
-        methods:{
-            handleClick(){
+        methods: {
+            handleClick() {
 
             }
         }
@@ -36,7 +44,7 @@
 </script>
 
 <style scoped lang="less">
-    .pad{
+    .pad {
         padding: 30px 60px;
     }
 </style>
