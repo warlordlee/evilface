@@ -62,7 +62,7 @@
     }
     .fish1-title{
         margin-top: 65px;
-        font-size: 32px;
+        font-size: 42px;
     }
     .fish2-title{
         position: absolute;
