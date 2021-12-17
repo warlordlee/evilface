@@ -9,7 +9,7 @@
                 <span class="mg-left" style="font-weight: bolder">{{0 ===mail?'女士':'先生'}}</span>
             </div>
             <div class="sub">
-               <div> {{subTitle}}</div>
+                <div> {{subTitle}}</div>
                 <div> {{subTitle2}}</div>
                 <div> {{subTitle3}}</div>
             </div>
@@ -55,16 +55,23 @@
 <script>
     export default {
         name: "certificate",
+        created() {
+            let date = new Date();
+            let year = date.getFullYear();
+            let month = date.getMonth() + 1;
+            let day = date.getDate();
+            this.date = year + '年' + month + '月' + day + '日'
+        },
         data() {
             return {
                 name: '',
-                date:'2021年12月16日',
+                date: '2021年12月16日',
                 title: '',
                 subTitle: '鉴于您在职业生涯中惊人的优异表现,特此授予',
-                subTitle2:'',
-                subTitle3:'',
+                subTitle2: '',
+                subTitle3: '',
                 mail: '',
-                org:'英国皇家摸鱼协会杭州分会',
+                org: '英国皇家摸鱼协会杭州分会',
                 sex: [{label: '先生', value: 1,}, {label: '女士', value: 0}]
             }
         }
@@ -87,12 +94,14 @@
         font-weight: bolder;
         letter-spacing: 2px;
     }
-    .name{
+
+    .name {
         position: absolute;
         top: 175px;
         left: 125px;
     }
-    .sub{
+
+    .sub {
         position: absolute;
         top: 205px;
         left: 145px;
@@ -102,7 +111,8 @@
         letter-spacing: 1px;
         text-align: left;
     }
-    .date{
+
+    .date {
         position: absolute;
         right: 60px;
         bottom: 61px;
@@ -110,7 +120,8 @@
         font-weight: bold;
         color: #9c958a;
     }
-    .org{
+
+    .org {
         position: absolute;
         right: 60px;
         bottom: 85px;
@@ -118,7 +129,8 @@
         font-weight: bold;
         color: #9c958a;
     }
-    .mg-left{
+
+    .mg-left {
         margin-left: 10px;
     }
 </style>
