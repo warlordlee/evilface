@@ -70,13 +70,13 @@
         background-size: 100% 80%;
     }
     .panda1-title{
-        bottom: 10px;
+        top: 350px;
     }
     .panda2-title{
-        bottom: 50px;
+        top: 320px;
     }
     .panda3-title{
-        bottom: 60px;
+        top: 315px;
     }
     .mg-left {
         margin-left: 10px;

@@ -61,14 +61,17 @@
         background-size: 80% 100%;
     }
     .fish1-title{
-        margin-top: 65px;
         font-size: 42px;
+        position: absolute;
+        bottom: 330px;
+        width: 100%;
+        text-align: center;
     }
     .fish2-title{
         position: absolute;
         width: 100%;
         text-align: center;
-        bottom: 0;
+        top: 365px;
         font-size: 45px;
         font-weight: bolder;
         color: black;
