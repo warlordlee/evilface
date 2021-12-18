@@ -9,7 +9,7 @@
                 <panda></panda>
             </el-tab-pane>
             <el-tab-pane label="蘑菇人" name="third">
-
+                <ms></ms>
             </el-tab-pane>
             <el-tab-pane label="摸鱼" name="forth">
                 <fish></fish>
@@ -22,13 +22,15 @@
     import certificate from "@/components/certificate";
     import fish from "@/components/fish";
     import panda from "@/components/panda";
+    import ms from '@/components/ms'
 
     export default {
         name: "face",
         components: {
             certificate,
             fish,
-            panda
+            panda,
+            ms
         },
         data() {
             return {
